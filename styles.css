@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Italic.ttf");
+  font-weight: 400i;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-BoldItalic.ttf");
+  font-weight: 700i;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: 800i;
+  font-style: italic;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border-bottom-right-radius: 4rem;
+  width: 350px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.input-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.input-container .birth-input {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.input-container .birth-label {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.input-container input {
+  border: 1px solid hsl(0, 0%, 94%);
+  border-radius: 4px;
+}
+.input-container input::-moz-placeholder {
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+  padding: 5px;
+}
+.input-container input::placeholder {
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+  padding: 5px;
+}
+.input-container input:focus {
+  outline: none;
+  border-color: hsl(259, 100%, 65%);
+}
+
+.age-container {
+  padding: 2rem;
+}
+.age-container .age-result {
+  font-size: 31px;
+}
+.age-container .age-result span:first-child {
+  color: hsl(259, 100%, 65%);
+  font-weight: 800;
+  font-style: italic;
+}
+.age-container .age-result span:nth-child(2) {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.0980392157);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
