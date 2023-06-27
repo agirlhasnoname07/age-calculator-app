@@ -85,6 +85,7 @@ body {
   border-radius: 10px;
   font-size: 2rem;
   padding: 0.8rem 1.3rem;
+  font-weight: 700;
 }
 .input-container input::-moz-placeholder {
   color: hsla(0, 1%, 44%, 0.693);
@@ -98,13 +99,27 @@ body {
   border: 1px solid hsl(259, 100%, 65%);
   outline: none;
 }
-.input-container p {
-  opacity: 0;
+.input-container input::-webkit-inner-spin-button, .input-container input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-container .invalid-input {
   font-size: 0.8rem;
   font-weight: 400;
   font-style: italic;
   color: hsl(0, 100%, 67%);
   margin: 8px 0;
+}
+
+.error label {
+  color: hsl(0, 100%, 67%);
+}
+.error input {
+  border-color: hsl(0, 100%, 67%);
+}
+.error input:focus {
+  border-color: hsl(0, 100%, 67%);
+  outline: none;
 }
 
 .age-container {

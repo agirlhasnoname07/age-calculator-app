@@ -109,6 +109,7 @@ body {
     border-radius: 10px;
     font-size: $fs-inputs;
     padding: 0.8rem 1.3rem;
+    font-weight: 700;
 
     &::placeholder {
       color: $smokey-grey;
@@ -119,15 +120,35 @@ body {
       border: 1px solid $purple;
       outline: none;
     }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
   }
 
-  p {
-    opacity: 0;
+  .invalid-input {
+    // opacity: 0;
     font-size: 0.8rem;
     font-weight: 400;
     font-style: italic;
     color: $light-red;
     margin: 8px 0;
+  }
+}
+
+.error {
+  label {
+    color: $light-red;
+  }
+  input{
+    border-color: $light-red;
+
+    &:focus {
+      border-color:$light-red;
+      outline: none;
+    }
   }
 }
 
